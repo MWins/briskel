@@ -1,0 +1,17 @@
+    {
+        "name": "malwinsc/briskel",
+        "description": "Blog using Slim +",
+        "license": "BSD",
+        "keywords": [
+        ],
+        "require": {
+            "php": ">=5.2.0",
+            "slim/slim": "2.6.2",
+            "slim/views":"0.1.3",
+            "twig/twig": "1.23.0",
+            "j4mie/paris":"1.5.4",
+            "j4mie/idiorm":"1.5.1",
+            "tuupola/slim-basic-auth":"1.*"
+            
+        }
+    }

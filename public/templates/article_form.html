@@ -1,0 +1,29 @@
+<div class="col-lg-6">
+<form action="{{ action_url }}" method="post" class="form">
+    <h1>{{ action_name }} Article</h1>
+ 
+    <p>
+        <label for="title">Title: </label><br />
+        <input type="text" name="title" value="{{ article.title|default('') }}" id="title" class="form-control "/>
+    </p>
+ 
+    <p>
+        <label for="author">Author: </label><br />
+        <input type="text" name="author" value="{{ article.author|default('') }}" id="author" class="form-control "/>
+    </p>
+ 
+    <p>
+        <label for="summary">Summary: </label><br />
+        <textarea name="summary" id="summary" rows="10" cols="20" class="form-control">{{ article.summary|default('') }}</textarea>
+    </p>  
+ 
+    <p>
+        <label for="content">Content: </label><br />
+        <textarea name="content" id="content" rows="10" cols="20" class="form-control ">{{ article.content|default('') }}</textarea>
+    </p>
+ 
+    <p>
+        <input type="submit" value="{{ action_name }} Article"  class="btn btn-primary" />
+    </p>
+</form>
+</div>

@@ -3,7 +3,7 @@
 require '../vendor/autoload.php';
 require 'models/Article.php';
 
-ORM::configure('mysql:host=localhost;dbname=test');
+ORM::configure('mysql:host=localhost;dbname=YOUR_DB_NAME');
 ORM::configure('username', 'YOUR_DB_USERNAME');
 ORM::configure('password', 'YOUR_DB_PASSWORD');
 
@@ -21,8 +21,6 @@ ORM::configure('password', 'YOUR_DB_PASSWORD');
             "admin" => 'password'
         ]
     ]));
-
-
 
 // routes 
 
